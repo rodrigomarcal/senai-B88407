@@ -10,6 +10,3 @@ if maiorDeIdade:
     print("Parabéns, você é maior de idade")
 else:
     print("Que peninha, você é de menor :(")
-
-
-
