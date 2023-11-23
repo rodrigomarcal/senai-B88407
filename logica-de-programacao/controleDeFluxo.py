@@ -1,6 +1,5 @@
 idade = 13
 
-
 if idade >= 18:
     maiorDeIdade = True
 else:
@@ -10,3 +9,5 @@ if maiorDeIdade:
     print("Parabéns, você é maior de idade")
 else:
     print("Que peninha, você é de menor :(")
+
+print("idade:", idade, "é maior de idade?", maiorDeIdade)
