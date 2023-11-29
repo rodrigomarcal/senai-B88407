@@ -1,3 +1,5 @@
+# Exercício de classificação de idade (idoso, adulto, adolescente ou criança)
+
 print("Digite sua idade: ")
 idade = input()
 idade = int(idade)

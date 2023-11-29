@@ -1,3 +1,4 @@
+# Exercício sistema de login: verificação de existência do usuário na base de dados
 
 dicionarioDeUsuarios = {
     "Aisha" : "@123MoonLight",
