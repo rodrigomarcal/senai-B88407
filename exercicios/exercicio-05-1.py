@@ -40,7 +40,7 @@ numeroDigitado = 0
 while numeroDigitado != 3:
     
     numeroDigitado = int(input("Bem-vindo à central de atendimento."
-                               "Solicite um dos serviços abaixo digitando os seguintes números\n"
+                               "Solicite um dos serviços abaixo digitando um dos os seguintes números\n"
                                "(1): Cadastrar-se uma conta sistema.\n"
                                "(2): Acessar sua conta.\n"
                                "(3): Cancelar operação\n"))
