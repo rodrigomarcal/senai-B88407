@@ -1,7 +1,7 @@
 #
 
 dicionarioDeUsuarios = {
-    "aisha" : "meudocinho"
+    "admin" : "admin"
 }
 
 # Função para cadastrar um novo usuário no sistema
@@ -55,4 +55,3 @@ while numeroDigitado != 3:
         print("Solicitação de serviço inválida ou não listada. Tente novamente")
 
 print(dicionarioDeUsuarios)
-
