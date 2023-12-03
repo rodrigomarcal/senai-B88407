@@ -23,8 +23,7 @@ print("{} é diferente de {}? {}".format(valor1, valor2, diferente))
 print("{} é maior que {}? {}".format(valor1, valor2, maiorQue))
 print("{} é menor que {}? {}".format(valor1, valor2, menorQue))
 print("{} é maior ou igual a {}? {}".format(valor1, valor2, maiorOuIgual))
-print("{} é menor ou igual a {}? {}".format(valor1, valor2, menorOuIgual))
-print()
+print("{} é menor ou igual a {}? {}\n".format(valor1, valor2, menorOuIgual))
 
 # Operadores lógicos: usados combinar condições/comparações e retornar resultado True (verdadeiro) ou False (falso)
 # and (e): resultado verdadeiro quando todas as condições são verdadeiras
