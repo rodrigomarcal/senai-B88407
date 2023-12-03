@@ -29,8 +29,7 @@ def exibirPedido (cardapioDeComidasLocal, carrinhoLocal):
     # Checa se o dicionário 'carrinho' está vazio
     if not bool(carrinhoLocal):
             print("\nParece que carrinho está vazio :(")
-            print("Você pode adicionar itens ao seu carrinho através da opção \"Adicionar um item ao carrinho\"",
-                  "no menu principal")
+            print("Você pode adicionar itens ao seu carrinho através da opção \"Adicionar um item ao carrinho\" no menu principal")
     else:        
         for lanche in carrinhoLocal:
             print("({}) {}: qtde: {}. Preço unitário: R$ {:.2f}. Preço total {:.2f}".format(
@@ -48,8 +47,7 @@ def adicionarItem(cardapioDeComidasLocal, carrinhoLocal):
     while True:
 
         busca = 1
-        opcao = int(input("Qual item deseja adicionar? (Digite (0) para cancelar e retornar ao menu principal)\n"
-                          ": "))
+        opcao = int(input("Qual item deseja adicionar? (Digite (0) para cancelar e retornar ao menu principal)\n: "))
 
         if opcao == 0:
             print("Cancelando operação...\n")
@@ -68,16 +66,13 @@ def adicionarItem(cardapioDeComidasLocal, carrinhoLocal):
                         break
                 busca += 1
 
-            opcao = int(input("Deseja adicionar mais algum item?\n"
-                              "(1): Sim\n"
-                              "(2): Não\n"
-                              ": "))
+            opcao = int(input("Deseja adicionar mais algum item?\n(1): Sim\n(2): Não\n: "))
             if opcao == 1:
                 None
             elif opcao == 2:
                 return
             else:
-                print("Operação inválida. Retornando ao menu principal")
+                print("Operação inválida. Retornando ao menu principal...")
                 return
 
 def removerItem(cardapioDeComidasLocal, carrinhoLocal):
@@ -88,8 +83,7 @@ def removerItem(cardapioDeComidasLocal, carrinhoLocal):
             print("\nVocê não possui nenhum item adicionado ao carrinho. Tente outra operação\n")
             break
 
-        opcao = int(input("Qual item deseja remover? (Digite (0) para cancelar e retornar ao menu principal)\n"
-                          ": "))
+        opcao = int(input("Qual item deseja remover? (Digite (0) para cancelar e retornar ao menu principal)\n: "))
         busca = 1
 
         if opcao == 0:
@@ -105,21 +99,14 @@ def removerItem(cardapioDeComidasLocal, carrinhoLocal):
 
                         while True:
                             opcao = int(input(
-                                "Digite uma das opções abaixo?\n" +
-                                "(0): Cancelar operação e voltar ao menu de remoção.\n" +
-                                "(1): Remover tudo.\n" +
-                                "(2): Selecionar quantidade a remover.\n" +
-                                ": "
+                                "Digite uma das opções abaixo?\n(0): Cancelar operação e voltar ao menu de remoção.\n(1): Remover tudo.\n(2): Selecionar quantidade a remover.\n: "
                             ))
 
                             if opcao == 0:
                                 break
                             elif opcao == 1:
                                 opcao = int(input(
-                                    "Deseja realmente remover o item do carrinho?\n" +
-                                    "(1): Sim."
-                                    "(2): Não."
-                                    ": "))
+                                    "Deseja realmente remover o item do carrinho?\n" + "(1): Sim\n(2): Não.\n: "))
                                 
                                 if opcao == 1:
                                     carrinhoLocal.pop(lanche)
@@ -132,11 +119,7 @@ def removerItem(cardapioDeComidasLocal, carrinhoLocal):
                                 quantidade = int(input("Informe a quantidade a ser removida: "))
 
                                 opcao = int(input(
-                                    "Deseja realmente prosseguir com a remoção dos itens do carrinho?\n" +
-                                    "(1): Sim."
-                                    "(2): Não."
-                                    "(3): Informar um valor diferente para remover"
-                                    ": "))
+                                    "Deseja realmente prosseguir com a remoção dos itens do carrinho?\n" + "(1): Sim\n(2): Não\n(3): Informar um valor diferente para remover\n: "))
                                 
                                 if opcao == 1:
                                     if quantidade >= carrinhoLocal[lanche]:
@@ -157,10 +140,7 @@ def removerItem(cardapioDeComidasLocal, carrinhoLocal):
                             else:
                                 print("Operação inválida. Tente novamente.")
                     else:
-                        opcao = int(input("Deseja realmente remover {} do carrinho?\n".format(lanche) +
-                                          "(1): Sim\n"
-                                          "(2): Não.\n"
-                                          ": "))
+                        opcao = int(input("Deseja realmente remover {} do carrinho?\n".format(lanche) + "(1): Sim\n(2): Não\n: "))
                         
                         if opcao == 1:
                             carrinhoLocal.pop(lanche)
@@ -177,20 +157,14 @@ def removerItem(cardapioDeComidasLocal, carrinhoLocal):
 
     return
 
-print("Bem-vindo à central de atendimento do MacDonalds.", 
-          "Solicite um dos serviços abaixo digitando o número referente\n")
+print("Bem-vindo à central de atendimento do MacDonalds. Solicite um dos serviços abaixo digitando o número referente\n")
 
 while True:
 
     print("\nQual serviço deseja solicitar?\n")
 
     
-    opcao = int(input("(1): Exibir cardápio de comidas.\n"
-                      "(2): Exibir carrinho.\n"
-                      "(3): Adicionar um item ao carrinho.\n"
-                      "(4): Remover um item do carrinho.\n"
-                      "(5): Encerrar atendimento.\n"
-                      ": "))
+    opcao = int(input("(1): Exibir cardápio de comidas\n(2): Exibir carrinho\n(3): Adicionar um item ao carrinho\n(4): Remover um item do carrinho.\n(5): Encerrar atendimento\n: "))
     
     if opcao == 1:
         exibirMenu(cardapioDeComidas)
